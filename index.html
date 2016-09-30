@@ -13,7 +13,7 @@
             <h3 class="panel-title">My NFL Roster</h3>
         </div>
         <div class="panel-body">
-           <div class="player-roster">
+           <div id="roster" class="player-roster">
                <div class="player-card">
                    <img src=http://s.nflcdn.com/static/content/public/image/fantasy/transparent/200x200/">
                    <h3>Player Name</h3>
@@ -22,12 +22,12 @@
                </div>
            </div>
            <div class="player-form">
-               <div class="formGroup">
-               <input type="text" placeholder="Player Name"/>
-               <input type="text" placeholder="Player Position"/>
-               <input type="text" placeholder="Player Number"/>
+               <form onsubmit="getInfo(event)">
+               <input type="text" name="playerName" placeholder="Player Name"/>
+               <input type="text" name="playerPosition" placeholder="Player Position"/>
+               <input type="text" name="playerJersey" placeholder="Player Number"/>
                <button class="btn btn-default" type="submit">Add</button>
-               </div>
+               </form>
            </div>
         </div>
     </div>
