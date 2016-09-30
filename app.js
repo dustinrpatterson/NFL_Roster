@@ -7,7 +7,7 @@ function Player(playerName, playerPosition, playerJersey){
 var players = []
 
 function getInfo(event){
-    debugger
+    
     event.preventDefault();
     var player = new Player(event.target.playerName.value, event.target.playerPosition.value, event.target.playerJersey.value)
     players.push(player)    
@@ -15,7 +15,7 @@ function getInfo(event){
 }
 
 function update(players){ 
-    debugger
+    
     var template = "";
     var rosterElement = document.getElementById('roster')
     for (var i = 0; i < players.length; i++){
